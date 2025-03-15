@@ -17,60 +17,100 @@
 
     <main>
         <article class="plans">
-            <h1>Panda Baby</h1>
+            <div class="title">
+                <h1>Panda Baby</h1>
+            </div>
+            <hr>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic tempora fuga fugiat, sit molestiae
                 molestias, ex odit neque ullam ipsum cum! Voluptatibus sunt possimus harum quos, ducimus asperiores
                 rerum qui!</p>
+                <hr>
             <div class="valores">
-                <h5>R$58,00</h5>
-                <h5>R$35,50</h5>
-                <h5 class="discount">R$22,50</h5>
+                <h5>R$60,00</h5>
+                <hr>
+                <h5>−R$35,00</h5>
+                <h5 class="discount">R$25,00/mês</h5>
             </div>
             <button>Assinar</button>
         </article>
 
         <article class="plans">
-            <h1>Panda Pro</h1>
+            <div class="title">
+                <h1>Panda Pro</h1>
+            </div>
+            <hr>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi. Nisi maiores id quia tenetur
                 excepturi facilis iste eos animi illo. Ipsam alias provident dolores error, et obcaecati quas cumque!
             </p>
+            <hr>
             <div class="valores">
-                <h5>R$58,00</h5>
-                <h5>R$35,50</h5>
-                <h5 class="discount">R$22,50</h5>
+                <h5>R$110,00</h5>
+                <hr>
+                <h5>−R$50,00</h5>
+                <h5 class="discount">R$60,00/mês</h5>
             </div>
             <button>Assinar</button>
         </article>
 
         <article class="plans">
-            <h1>Panda Turbo</h1>
+            <div class="title">
+                <h1>Panda Turbo</h1>
+            </div>
+
+            <hr>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laudantium, recusandae quo odit
                 soluta, dolore vero autem alias exercitationem ab mollitia? Debitis necessitatibus aliquam dolorem quas?
                 Voluptas, molestias deleniti. Temporibus.</p>
 
+            <hr>
             <div class="valores">
-                <h5>R$58,00</h5>
-                <h5>R$35,50</h5>
-                <h5 class="discount">R$22,50</h5>
+                <h5>R$170,00</h5>
+                <hr>
+                <h5>−R$80,00</h5>
+                <h5 class="discount">R$90,00</h5>
             </div>
             <button>Assinar</button>
         </article>
     </main>
 </body>
+<footer>
+    <p style="font-size: 0.9em; text-align: center; color: #777;">
+        © 2025 BrunãoTheMachine. Todos os direitos reservados.  
+        Siga nossas diretrizes para uma comunidade respeitosa e colaborativa.  
+
+    </p>
+</footer>
 
 </html>
 
 <style>
+    footer{
+        margin-top: 20px;
+        background-color: rgb(33, 72, 189);
+    }
+    hr {
+        width: 250px;
+        height: 1px;
+        background-attachment: fixed;
+        background-color: rgb(74, 160, 182);
+        align-items: center;
+    }
+
     body {
-        margin: 300px;
+        margin: 200px;
         margin-top: 0;
         margin-bottom: 0;
     }
 
+    html {
+        background-color: rgb(33, 72, 189);
+
+    }
+
     * {
-        background-color: rgb(90, 82, 82);
+        background-color: rgb(74, 160, 182);
         margin: 0;
     }
 
@@ -93,7 +133,8 @@
 
     nav p {
         font-size: 20px;
-        max-width: 1200px;
+        max-width: 900px;
+        margin-top: -60px;
         text-align: center;
         background-color: rgb(0, 110, 255);
     }
@@ -102,8 +143,8 @@
         margin: 5px;
         font-size: 15px;
         max-width: 300px;
-        text-align: start;
         background-color: rgb(255, 255, 255);
+        text-align: center;
     }
 
     .plans {
@@ -136,21 +177,31 @@
     }
 
     button {
+        transition: 1.5s;
         width: 100%;
         height: 60px;
         border-bottom-left-radius: 12%;
         border-bottom-right-radius: 12%;
         border-color: rgb(0, 255, 0);
         background-color: greenyellow;
+        cursor: pointer;
+    }
+
+    button:hover {
+        transition: 0.5s;
+        background-color: green;
+        padding: 50px;
+
     }
 
     h5 {
         padding: 10px;
         background-color: rgb(255, 255, 255);
-
+        margin-left: 10px;
     }
 
     .valores {
+
         width: 100%;
         background-color: white;
     }
@@ -158,5 +209,18 @@
     .discount {
         background-color: yellow;
         width: fit-content;
+    }
+
+    .title {
+        margin-top: 15px;
+    }
+
+    .valores hr {
+        width: 50px;
+        height: 3px;
+        background-attachment: fixed;
+        background-color: rgb(255, 70, 70);
+        margin-top: -20px;
+        margin-left: 18px;
     }
 </style>
